@@ -1,0 +1,142 @@
+
+/*--------Navbar--------*/
+.navbar {
+    overflow: hidden;
+    background-color: rgb(16, 64, 112);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: rgb(10, 143, 43);
+    color: rgb(255, 246, 246);
+}
+
+/*--------/Navbar--------*/
+
+
+/*--------Logo Image--------*/
+.logoimage {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: drop-shadow(8px 8px 10px rgb(0, 0, 0));
+    border-radius: 15px 50px;
+}
+
+.logotext {
+    position: absolute;
+    bottom: 20px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 28px;
+    border-radius: 15px 50px;
+}
+
+img {
+    border-radius: 15px 50px;
+    margin-top: 39px;
+}
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    cursor: pointer;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.407);
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*--------Logo Image--------*/
+
+
+/*--------Table--------*/
+table {
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(16, 64, 112);
+    color: white;
+    border-color: black;
+}
+/*--------/Table--------*/
+
+
+/*--------/Column--------*/
+.column {
+    float: left;
+    width: 50%;
+    padding-right: 60px;
+    padding-top: 30px;
+}
+
+  .row {
+    display: flex;
+}
+
+h2 {
+    color: rgb(16, 64, 112);
+}
+
+.column p:hover {
+    background-color: rgb(16, 64, 112);
+    color: white;
+  }
+
+/*--------/Column--------*/
+
+
+
+/*--------Footer--------*/
+.footer{
+    text-align: center;
+    font-size: 16pt;
+    padding: 100px;
+    font-weight: bold;
+}
+/*--------/Footer--------*/
