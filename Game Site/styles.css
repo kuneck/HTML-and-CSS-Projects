@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar a {
@@ -44,7 +45,7 @@
     color: white;
     padding-left: 40px;
     padding-right: 20px;
-    font-size: 28px;
+    font-size: 2vw;
     border-radius: 15px 50px;
 }
 
@@ -70,14 +71,16 @@ img {
 }
 
 .text {
-    background-color: rgba(0, 0, 0, 0.407);
+    background-color: rgba(0, 0, 0, 0.56);
     color: white;
-    font-size: 80px;
+    font-size: 6vw;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: center; 
+    width: 57%;
+    
 }
 /*--------Logo Image--------*/
 
@@ -126,7 +129,7 @@ h2 {
 .column p:hover {
     background-color: rgb(16, 64, 112);
     color: white;
-  }
+}
 
 /*--------/Column--------*/
 
