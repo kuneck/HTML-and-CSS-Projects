@@ -6,5 +6,5 @@ This page is an example home page for a Space travel company. It's sytled using 
 Movie Theater Site - 
 This page is an example home page for a Movie Theater that is styled using bootstrap 4. It contains many Bootstrap components including, but not limited to a navbar, jumbotron, form, cards, and dropdowns.
 
-Portfolio - 
+Portfolio Site - 
 This page is an example home page for Personal Portolfio. It's styled using CSS.
