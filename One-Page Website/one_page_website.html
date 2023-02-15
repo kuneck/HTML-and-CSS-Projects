@@ -3,6 +3,7 @@
 	<head>
 		<title>My top 3 games</title>
 		<meta charset="utf-8">
+		<script src="JS/one_page_website.js" defer></script>
 		<link rel="stylesheet" href="./css/text-styles.css">
 	</head>
 	<body>
@@ -24,12 +25,12 @@
 					<br>Five years after their dangerous journey across the post-pandemic United States, Ellie and Joel have settled down in Jackson, Wyoming. Living amongst a thriving community of survivors has allowed them peace and stability, despite the constant threat of the infected and other, more desperate survivors. When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry out justice and find closure. As she hunts those responsible one by one, she is confronted with the devastating physical and emotional repercussions of her actions.
 				</p>
 				<p>
-					<strong> 2 - The Witcher 3</strong> 
-					<br>In The Witcher 3 an ancient evil stirs, awakening. An evil that sows terror and abducts the young. An evil whose name is spoken only in whispers: the Wild Hunt. Led by four wraith commanders, this ravenous band of phantoms is the ultimate predator and has been for centuries. Its quarry: humans.
+					<strong> 2 - Elden Ring</strong> 
+					<br>Elden Ring takes place in the Lands Between, a fictional landmass ruled over by several demigods. It was previously ruled over by the immortal Queen Marika, who acted as keeper of the Elden Ring, a powerful force that manifested as the physical concept of order. When Marika eventually shattered the Elden Ring and disappeared, her demigod children began warring over pieces of the Ring in an event called the Shattering. Each demigod possesses a shard of the Ring called a Great Rune, which corrupts them with power. In the game, the player character is a Tarnished, one of a group of exiles from the Lands Between who are summoned back after the Shattering. As one of the Tarnished, the player must traverse the realm to repair the Elden Ring and become the Elden Lord.
 				</p>
 				<p>
-					<strong> 3 - God of War</strong> 
-					<br>His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.
+					<strong> 3 - God of War: Ragnarok</strong> 
+					<br>The freezing winds of Fimbulwinter have come to Midgard, making survival for Kratos, Atreus, and Mimir in the Norse wilds even more challenging than before. Kratos, still bearing the knowledge of his past mistakes, wants to spare Atreus the bloody lessons he learned from his conflict with gods. He wants to keep his son safe, above all, and their confrontation with Baldur has vindicated the belief that only tragedy will come from further entanglements with the Aesir. Together, Kratos and Atreus will have to make a choice about which path they will take. Whatever they choose will define the fate of all those living in the Nine Realms as Ragnarok approaches.
 				</p>
 		</div>	
 		<!-- END HOME -->
@@ -38,43 +39,148 @@
 		<div id="gallery">
 			<h1>Gallery</1>
 				
-					<!--PHOTO CONTAINER 1 -->
-						<h3>The Last of Us Part 2</h3>
-						<img src=" ./Images/tlou1.jpg" width="400" height="300"> 
-						<img src=" ./Images/tlou2.jpg" width="500" height="300">
-						<img src=" ./Images/tlou3.jpg" width="500" height="300">
-								
-					<!-- END PHOTO CONTAINER 1 -->
-					
-					<!--PHOTO CONTAINER 2 -->
-						<h3>The Witcher 3</h3>
-						<img src=" ./Images/tw1.jpg" width="500" height="300"> 
-						<img src=" ./Images/tw2.jpg" width="500" height="300">
-						<img src=" ./Images/tw3.jpg" width="500" height="300">
-						
-					<!-- END PHOTO CONTAINER 2 -->
-					
-					<!--PHOTO CONTAINER 3 -->
-						<h3>God of War</h3>
-						<img src=" ./Images/gow1.jpg" width="500" height="300"> 
-						<img src=" ./Images/gow2.jpg" width="500" height="300">
-						<img src=" ./Images/gow3.jpg" width="600" height="300">
-					<!-- END PHOTO CONTAINER 3 -->
+				<div class="row">
+					<div class="column">
+						<img src="./Images/tlou1.jpg" width="400" height="250" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./Images/tlou2.jpg" width="400" height="250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./Images/tlou3.jpg" width="400" height="250" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./Images/gow1.jpg" width="400" height="250" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./Images/gow2.jpg" width="400" height="250" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					  </div>
+					<div class="column">
+						<img src="./Images/gow3.jpg" width="400" height="250" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./Images/er1.jpg" width="400" height="250" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./Images/er2.jpg" width="400" height="250" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./Images/er3.jpg" width="400" height="250" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+				  </div>
+				  
+				  <!-- The Modal/Lightbox -->
+				  <div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+				  
+					  <div class="mySlides">
+						<div class="numbertext">1 / 9</div>
+						<img src="./Images/tlou1.jpg" style="width:100%">
+					  </div>
+				  
+					  <div class="mySlides">
+						<div class="numbertext">2 / 9</div>
+						<img src="./Images/tlou2.jpg" style="width:100%">
+					  </div>
+				  
+					  <div class="mySlides">
+						<div class="numbertext">3 / 9</div>
+						<img src="./Images/tlou3.jpg" style="width:100%">
+					  </div>
+				  
+					  <div class="mySlides">
+						<div class="numbertext">4 / 9</div>
+						<img src="./Images/er1.jpg" style="width:100%">
+					  </div>
+
+					  <div class="mySlides">
+						<div class="numbertext">5 / 9</div>
+						<img src="./Images/er2.jpg" style="width:100%">
+					  </div>
+				  
+					  <div class="mySlides">
+						<div class="numbertext">6 / 9</div>
+						<img src="./Images/er3.jpg" style="width:100%">
+					  </div>
+				  
+					  <div class="mySlides">
+						<div class="numbertext">7 / 9</div>
+						<img src="./Images/gow1.jpg" style="width:100%">
+					  </div>
+				  
+					  <div class="mySlides">
+						<div class="numbertext">8 / 9</div>
+						<img src="./Images/gow2.jpg" style="width:100%">
+					  </div>
+
+					  <div class="mySlides">
+						<div class="numbertext">9 / 9</div>
+						<img src="./Images/gow3.jpg" style="width:100%">
+					  </div>
+				  
+					  <!-- Next/previous controls -->
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				  
+					  <!-- Caption text -->
+					  <div class="caption-container">
+						<p id="caption"></p>
+					  </div>
+				  
+					  <!-- Thumbnail image controls -->
+					  <div class="column">
+						<img class="demo" src="./Images/tlou1.jpg" width="200" height="125" onclick="currentSlide(1)" alt="The Last of Us Part 2">
+					  </div>
+				  
+					  <div class="column">
+						<img class="demo" src="./Images/tlou2.jpg" width="200" height="125" onclick="currentSlide(2)" alt="The Last of Us Part 2">
+					  </div>
+				  
+					  <div class="column">
+						<img class="demo" src="./Images/tlou3.jpg" width="200" height="125" onclick="currentSlide(3)" alt="The Last of Us Part 2">
+					  </div>
+				  
+					  <div class="column">
+						<img class="demo" src="./Images/er1.jpg" width="200" height="125" onclick="currentSlide(4)" alt="Elden Ring">
+					  </div>
+
+					  <div class="column">
+						<img class="demo" src="./Images/er2.jpg" width="200" height="125" onclick="currentSlide(5)" alt="Elden Ring">
+					  </div>
+				  
+					  <div class="column">
+						<img class="demo" src="./Images/er3.jpg" width="200" height="125" onclick="currentSlide(6)" alt="Elden Ring">
+					  </div>
+				  
+					  <div class="column">
+						<img class="demo" src="./Images/gow1.jpg" width="200" height="125" onclick="currentSlide(7)" alt="God of War Ragnarok">
+					  </div>
+				  
+					  <div class="column">
+						<img class="demo" src="./Images/gow2.jpg" width="200" height="125" onclick="currentSlide(8)" alt="God of War Ragnarok">
+					  </div>
+
+					  <div class="column">
+						<img class="demo" src="./Images/gow3.jpg" width="200" height="125" onclick="currentSlide(9)" alt="God of War Ragnarok">
+					  </div>
+					</div>
+				  </div>
 					
 		<!-- END GALLERY -->
-		
+		<br> <br>
 		<!-- VIDEOS -->
 		<div id="videos">
 				<h1>Videos</h1>
 		
 				<h3>The Last of Us Part 2</h3>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/eOiUtRF8k28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>> 
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/eOiUtRF8k28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 					
-				<h3>The Witcher 3</h3>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/XHrskkHf958" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h3>Elden Ring</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/E3Huy2cdih0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					
-				<h3>God of War</h3>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/rClXqZD2Xrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h3>God of War: Ragnarok</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/EE-4GvjKcfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					
 		<!-- END VIDEOS -->
 		
